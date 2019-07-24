@@ -1,2 +1,3 @@
-# study-react-native
-Some examples of react native
+# react native
+
+1. 起步
