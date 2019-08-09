@@ -1,4 +1,6 @@
 # Logs
+.DS_Store
+
 logs
 *.log
 npm-debug.log*
@@ -59,3 +61,14 @@ typings/
 
 # next.js build output
 .next
+
+01-起步/AwesomeProject/node_modules
+02-分量加载/demo1/node_modules
+02-分量加载/SubPack/node_modules
+
+01-起步/AwesomeProject/ios/Pods
+01-起步/AwesomeProject/ios/build
+
+02-分量加载/demo1/RNSplitePack/Pods
+02-分量加载/SubPack/ios/Pods
+02-分量加载/SubPack/ios/build
