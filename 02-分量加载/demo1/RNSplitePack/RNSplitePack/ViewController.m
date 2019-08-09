@@ -6,10 +6,15 @@
 //  Copyright © 2019 wenjie. All rights reserved.
 //
 
+#define DEBUG 0
+
 #import "ViewController.h"
 #import <React/RCTRootView.h>
 
-@interface ViewController ()
+//DiffMatchPatch 中有三个文件 需要在编译阶段设置 -fno-objc-arc
+#import "DiffMatchPatch.h"
+
+@interface ViewController ()<RCTBridgeDelegate>
 
 @end
 
@@ -17,31 +22,58 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadReactView];
+    
+    
+    RCTBridge *bridge = [[RCTBridge alloc]initWithDelegate:self launchOptions:nil];
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"RNHighScores" initialProperties:nil];
+    
+    self.view = rootView;
 }
 
-- (void)loadReactView{
-    NSLog(@"High Score Button Pressed");
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+
+
+- (NSString *)getMergeBundlePath{
+    NSString *commonBundlePath = [[NSBundle mainBundle] pathForResource:@"common" ofType:@"bundle"];
+    NSLog(@"path=%@",commonBundlePath);
+    NSString *commonJsCode = [[NSString alloc] initWithContentsOfFile:commonBundlePath encoding:NSUTF8StringEncoding error:nil];
     
-    RCTRootView *rootView =
-    [[RCTRootView alloc] initWithBundleURL: jsCodeLocation
-                                moduleName: @"RNHighScores"
-                         initialProperties:
-     @{
-       @"scores" : @[
-               @{
-                   @"name" : @"Alex",
-                   @"value": @"42"
-                   },
-               @{
-                   @"name" : @"Joel",
-                   @"value": @"10"
-                   }
-               ]
-       }
-                             launchOptions: nil];
-    self.view = rootView;
+    
+    NSString *businessBundlePath = [[NSBundle mainBundle] pathForResource:@"business" ofType:@"patch"];
+    NSLog(@"path=%@",businessBundlePath);
+    NSString *businessJsCode = [[NSString alloc] initWithContentsOfFile:businessBundlePath encoding:NSUTF8StringEncoding error:nil];
+    
+    
+    DiffMatchPatch *diffMatchPatch = [[DiffMatchPatch alloc] init];
+    NSArray *convertedPatches = [diffMatchPatch patch_fromText:businessJsCode error:nil];
+    
+    NSArray *resultsArray = [diffMatchPatch patch_apply:convertedPatches toString:commonJsCode];
+    NSString *resultJSCode = resultsArray[0]; //patch合并后的js
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docDir = [paths objectAtIndex:0];
+    NSString *newPath = [NSString stringWithFormat:@"%@/%@.bundle",docDir,@"newbusiness"];
+    
+    if (resultsArray.count > 1) {
+        BOOL ret = [resultJSCode writeToFile:newPath atomically:NO encoding:NSUTF8StringEncoding error:nil];
+        NSLog(@"存入状态%d",ret);
+    }
+    return newPath;
+}
+
+- (void)loadLocalBusinessBundle{
+    
+    
+    
+}
+
+- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge{
+    if (DEBUG) {
+        return [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios"];
+    } else {
+        NSString *path = [self getMergeBundlePath];
+        NSURL *jsBundleURL = [NSURL URLWithString:path];
+        return jsBundleURL;
+    }
 }
 
 

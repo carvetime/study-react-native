@@ -1,0 +1,106 @@
+@@ -8398,33 +8398,33 @@
+ %5D),n=t(r(d%5B1%5D)),
+-u
++l
+ =t(r(d%5B2%5D)),o=t(
+@@ -8424,33 +8424,33 @@
+ )),o=t(r(d%5B3%5D)),
+-l
++c
+ =t(r(d%5B4%5D)),f=t(
+@@ -8437,33 +8437,33 @@
+ )),c=t(r(d%5B4%5D)),
+-f
++u
+ =t(r(d%5B5%5D)),c=t(
+@@ -8450,33 +8450,33 @@
+ )),u=t(r(d%5B5%5D)),
+-c
++s
+ =t(r(d%5B6%5D)),s=r(
+@@ -8467,25 +8467,25 @@
+ =t(r(d%5B6%5D)),
+-s
++f
+ =r(d%5B7%5D),p=(
+@@ -8481,17 +8481,17 @@
+ r(d%5B7%5D),
+-p
++h
+ =(functi
+@@ -8497,33 +8497,33 @@
+ ion(t)%7Bfunction 
+-p
++h
+ ()%7Breturn(0,n.de
+@@ -8534,17 +8534,17 @@
+ t)(this,
+-p
++h
+ ),(0,o.d
+@@ -8551,33 +8551,33 @@
+ efault)(this,(0,
+-l
++c
+ .default)(p).app
+@@ -8570,17 +8570,17 @@
+ efault)(
+-p
++h
+ ).apply(
+@@ -8597,33 +8597,33 @@
+ ents))%7Dreturn(0,
+-f
++u
+ .default)(p,t),(
+@@ -8620,17 +8620,17 @@
+ lt)(
+-p
++h
+ ,t),(0,
+-u
++l
+ .def
+@@ -8635,17 +8635,17 @@
+ efault)(
+-p
++h
+ ,%5B%7Bkey:%22
+@@ -8676,17 +8676,17 @@
+ %7Breturn 
+-c
++s
+ .default
+@@ -8700,17 +8700,17 @@
+ Element(
+-s
++f
+ .View,%7Bs
+@@ -8730,19 +8730,154 @@
+ ner%7D
++,s.default.createElement(f.Text,%7Bstyle:y.highScoresTitle%7D,%222048 High Scores!%22),s.default.createElement(f.Text,%7Bstyle:y.scores%7D,%22hello%22)
+ )%7D%7D%5D),
+-p
++h
+ %7D)(
+-c
++s
+ .def
+@@ -8894,17 +8894,17 @@
+ nent),y=
+-s
++f
+ .StyleSh
+@@ -8998,17 +8998,139 @@
+ or:'
+-red'
++#FFFFFF'%7D,highScoresTitle:%7BfontSize:20,textAlign:'center',margin:10%7D,scores:%7BtextAlign:'center',color:'#333333',marginBottom:5
+ %7D%7D);
+-s
++f
+ .App
+@@ -9189,17 +9189,17 @@
+ %7Breturn 
+-p
++h
+ %7D)%7D,0,%5B1

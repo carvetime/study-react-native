@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		08B6A315CDBB25C3F4D43C43 /* libPods-RNSplitePackUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A665131138464F4669E6D0 /* libPods-RNSplitePackUITests.a */; };
 		14E02486ED417442260DB10A /* libPods-RNSplitePackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C46B73188D415261DF6603FB /* libPods-RNSplitePackTests.a */; };
+		694EA44622FD4A800067D179 /* NSString+UnicharUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 694EA43F22FD4A800067D179 /* NSString+UnicharUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		694EA44722FD4A800067D179 /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 694EA44022FD4A800067D179 /* DiffMatchPatch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		694EA44822FD4A800067D179 /* NSString+JavaSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 694EA44122FD4A800067D179 /* NSString+JavaSubstring.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		694EA44922FD4A800067D179 /* NSString+UriCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 694EA44222FD4A800067D179 /* NSString+UriCompatibility.m */; };
+		694EA44A22FD4A800067D179 /* NSMutableDictionary+DMPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 694EA44522FD4A800067D179 /* NSMutableDictionary+DMPExtensions.m */; };
+		694EA44D22FD4AAD0067D179 /* DiffMatchPatchCFUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 694EA44C22FD4AAD0067D179 /* DiffMatchPatchCFUtilities.c */; };
+		694EA45222FD6FAB0067D179 /* business.patch in Resources */ = {isa = PBXBuildFile; fileRef = 694EA45022FD6FAB0067D179 /* business.patch */; };
+		694EA45322FD6FAB0067D179 /* common.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 694EA45122FD6FAB0067D179 /* common.bundle */; };
 		69E6538622F18D24000830CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E6538522F18D24000830CB /* AppDelegate.m */; };
 		69E6538922F18D24000830CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E6538822F18D24000830CB /* ViewController.m */; };
 		69E6538C22F18D24000830CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E6538A22F18D24000830CB /* Main.storyboard */; };
@@ -41,6 +49,24 @@
 		005B8ED9E099367A14327513 /* libPods-RNSplitePack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNSplitePack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		255D1FD9A08596DAB2D52658 /* Pods-RNSplitePackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSplitePackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNSplitePackUITests/Pods-RNSplitePackUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		38B5FE0F97F474F3346D641B /* Pods-RNSplitePackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSplitePackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNSplitePackUITests/Pods-RNSplitePackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		694EA43622FD4A0C0067D179 /* DiffMatchPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiffMatchPatch.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/DiffMatchPatch-dmxwqhsvyjgjghcrmnmhuxfwhtwd/Build/Products/Debug/DiffMatchPatch.framework"; sourceTree = "<group>"; };
+		694EA43922FD4A800067D179 /* DiffMatchPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch.h; sourceTree = "<group>"; };
+		694EA43A22FD4A800067D179 /* speedtest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speedtest_Prefix.pch; sourceTree = "<group>"; };
+		694EA43B22FD4A800067D179 /* DiffMatchPatch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch_Prefix.pch; sourceTree = "<group>"; };
+		694EA43C22FD4A800067D179 /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UriCompatibility.h"; sourceTree = "<group>"; };
+		694EA43D22FD4A800067D179 /* NSString+JavaSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JavaSubstring.h"; sourceTree = "<group>"; };
+		694EA43E22FD4A800067D179 /* NSMutableDictionary+DMPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DMPExtensions.h"; sourceTree = "<group>"; };
+		694EA43F22FD4A800067D179 /* NSString+UnicharUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UnicharUtilities.m"; sourceTree = "<group>"; };
+		694EA44022FD4A800067D179 /* DiffMatchPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiffMatchPatch.m; sourceTree = "<group>"; };
+		694EA44122FD4A800067D179 /* NSString+JavaSubstring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JavaSubstring.m"; sourceTree = "<group>"; };
+		694EA44222FD4A800067D179 /* NSString+UriCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UriCompatibility.m"; sourceTree = "<group>"; };
+		694EA44322FD4A800067D179 /* NSString+UnicharUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UnicharUtilities.h"; sourceTree = "<group>"; };
+		694EA44422FD4A800067D179 /* MinMaxMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinMaxMacros.h; sourceTree = "<group>"; };
+		694EA44522FD4A800067D179 /* NSMutableDictionary+DMPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DMPExtensions.m"; sourceTree = "<group>"; };
+		694EA44B22FD4AAD0067D179 /* DiffMatchPatchCFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatchCFUtilities.h; sourceTree = "<group>"; };
+		694EA44C22FD4AAD0067D179 /* DiffMatchPatchCFUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DiffMatchPatchCFUtilities.c; sourceTree = "<group>"; };
+		694EA45022FD6FAB0067D179 /* business.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = business.patch; sourceTree = "<group>"; };
+		694EA45122FD6FAB0067D179 /* common.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.bundle; sourceTree = "<group>"; };
 		69AFAFA3C32D9EA76C546E83 /* Pods-RNSplitePackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSplitePackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNSplitePackTests/Pods-RNSplitePackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69E6538122F18D24000830CB /* RNSplitePack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNSplitePack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E6538422F18D24000830CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,9 +132,49 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		694EA41F22FD2EE10067D179 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				694EA45022FD6FAB0067D179 /* business.patch */,
+				694EA45122FD6FAB0067D179 /* common.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		694EA42422FD44A00067D179 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				694EA43822FD4A800067D179 /* GGDiffMatchPatch */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		694EA43822FD4A800067D179 /* GGDiffMatchPatch */ = {
+			isa = PBXGroup;
+			children = (
+				694EA44C22FD4AAD0067D179 /* DiffMatchPatchCFUtilities.c */,
+				694EA44B22FD4AAD0067D179 /* DiffMatchPatchCFUtilities.h */,
+				694EA43922FD4A800067D179 /* DiffMatchPatch.h */,
+				694EA43A22FD4A800067D179 /* speedtest_Prefix.pch */,
+				694EA43B22FD4A800067D179 /* DiffMatchPatch_Prefix.pch */,
+				694EA43C22FD4A800067D179 /* NSString+UriCompatibility.h */,
+				694EA43D22FD4A800067D179 /* NSString+JavaSubstring.h */,
+				694EA43E22FD4A800067D179 /* NSMutableDictionary+DMPExtensions.h */,
+				694EA43F22FD4A800067D179 /* NSString+UnicharUtilities.m */,
+				694EA44022FD4A800067D179 /* DiffMatchPatch.m */,
+				694EA44122FD4A800067D179 /* NSString+JavaSubstring.m */,
+				694EA44222FD4A800067D179 /* NSString+UriCompatibility.m */,
+				694EA44322FD4A800067D179 /* NSString+UnicharUtilities.h */,
+				694EA44422FD4A800067D179 /* MinMaxMacros.h */,
+				694EA44522FD4A800067D179 /* NSMutableDictionary+DMPExtensions.m */,
+			);
+			path = GGDiffMatchPatch;
+			sourceTree = "<group>";
+		};
 		69E6537822F18D24000830CB = {
 			isa = PBXGroup;
 			children = (
+				694EA41F22FD2EE10067D179 /* Resource */,
 				69E6538322F18D24000830CB /* RNSplitePack */,
 				69E6539C22F18D26000830CB /* RNSplitePackTests */,
 				69E653A722F18D27000830CB /* RNSplitePackUITests */,
@@ -131,6 +197,7 @@
 		69E6538322F18D24000830CB /* RNSplitePack */ = {
 			isa = PBXGroup;
 			children = (
+				694EA42422FD44A00067D179 /* Lib */,
 				69E6538422F18D24000830CB /* AppDelegate.h */,
 				69E6538522F18D24000830CB /* AppDelegate.m */,
 				69E6538722F18D24000830CB /* ViewController.h */,
@@ -165,6 +232,7 @@
 		D5074C4FAEDE5261BBB2E1EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				694EA43622FD4A0C0067D179 /* DiffMatchPatch.framework */,
 				005B8ED9E099367A14327513 /* libPods-RNSplitePack.a */,
 				C46B73188D415261DF6603FB /* libPods-RNSplitePackTests.a */,
 				A5A665131138464F4669E6D0 /* libPods-RNSplitePackUITests.a */,
@@ -284,9 +352,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694EA45222FD6FAB0067D179 /* business.patch in Resources */,
 				69E6539122F18D26000830CB /* LaunchScreen.storyboard in Resources */,
 				69E6538E22F18D26000830CB /* Assets.xcassets in Resources */,
 				69E6538C22F18D24000830CB /* Main.storyboard in Resources */,
+				694EA45322FD6FAB0067D179 /* common.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,8 +568,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E6538922F18D24000830CB /* ViewController.m in Sources */,
+				694EA44822FD4A800067D179 /* NSString+JavaSubstring.m in Sources */,
 				69E6539422F18D26000830CB /* main.m in Sources */,
+				694EA44A22FD4A800067D179 /* NSMutableDictionary+DMPExtensions.m in Sources */,
 				69E6538622F18D24000830CB /* AppDelegate.m in Sources */,
+				694EA44922FD4A800067D179 /* NSString+UriCompatibility.m in Sources */,
+				694EA44D22FD4AAD0067D179 /* DiffMatchPatchCFUtilities.c in Sources */,
+				694EA44722FD4A800067D179 /* DiffMatchPatch.m in Sources */,
+				694EA44622FD4A800067D179 /* NSString+UnicharUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +749,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RNSplitePack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -692,6 +769,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RNSplitePack/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

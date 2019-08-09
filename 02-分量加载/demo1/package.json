@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "yarn react-native start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./script/diff.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-native": "^0.60.4"
+  },
+  "devDependencies": {
+    "diff-match-patch": "^1.0.4"
   }
 }
