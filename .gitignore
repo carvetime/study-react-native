@@ -72,20 +72,19 @@ typings/
 02-分量加载/demo1/RNSplitePack/Pods
 02-分量加载/SubPack/ios/Pods
 02-分量加载/SubPack/ios/build
-02-分量加载/demo1/RNSplitePack/RNSplitePack.xcworkspace/
 02-分量加载/SubPack/Pods
 02-分量加载/SubPack/build
 
-02-分量加载/demo1/RNSplitePack/RNSplitePack.xcworkspace/
+02-分量加载/demo1/RNSplitePack/RNSplitePack.xcodeproj
+02-分量加载/demo1/RNSplitePack/RNSplitePack.xcworkspace
 02-分量加载/demo1/RNSplitePack/*.xcuserstate
+02-分量加载/demo1/RNSplitePack/*.xcworkspace
 02-分量加载/demo1/RNSplitePack/project.xcworkspace
 02-分量加载/demo1/RNSplitePack/xcuserdata
-02-分量加载/demo1/RNSplitePack/UserInterfaceState.xcuserstate
-02-分量加载/demo1/RNSplitePack/project.xcworkspace/
-02-分量加载/demo1/RNSplitePack/xcuserdata/
-02-分量加载/demo1/RNSplitePack/UserInterface.xcuserstate 
 
 02-分量加载/demo2/SubPack/Podfile.lock
-02-分量加载/demo2/SubPack/Pods/
-02-分量加载/demo2/SubPack/SubPack.xcworkspace/
-02-分量加载/demo1/RNSplitePack/RNSplitePack.xcodeproj/project.xcworkspace
+02-分量加载/demo2/SubPack/Pods
+02-分量加载/demo2/SubPack/SubPack.xcworkspace
+02-分量加载/demo2/SubPack/SubPack/*xcuserstate
+02-分量加载/demo2/SubPack/SubPack/*xcworkspace
+02-分量加载/demo2/SubPack/SubPack/*xcuserdata
