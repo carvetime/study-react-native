@@ -70,5 +70,14 @@ typings/
 01-起步/AwesomeProject/ios/build
 
 02-分量加载/demo1/RNSplitePack/Pods
-02-分量加载/SubPack/ios/Pods
+02-分量加载/SubPack/ios/Pods--
 02-分量加载/SubPack/ios/build
+
+
+02-分量加载/demo1/RNSplitePack/*.xcuserstate
+02-分量加载/demo1/RNSplitePack/project.xcworkspace
+02-分量加载/demo1/RNSplitePack/xcuserdata
+02-分量加载/demo1/RNSplitePack/UserInterfaceState.xcuserstate
+02-分量加载/demo1/RNSplitePack/project.xcworkspace/
+02-分量加载/demo1/RNSplitePack/xcuserdata/
+02-分量加载/demo1/RNSplitePack/UserInterface.xcuserstate 
