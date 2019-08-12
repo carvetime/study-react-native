@@ -8,6 +8,8 @@
 
 这里我们先演示下google-diff-match-patch的diff拆分包方案
 
+<!-- more -->
+
 首先我们新建一个iOS项目，并生成配置下pod
 ```pod
 # Uncomment the next line to define a global platform for your project
