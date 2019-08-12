@@ -60,11 +60,6 @@
     return newPath;
 }
 
-- (void)loadLocalBusinessBundle{
-    
-    
-    
-}
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge{
     if (DEBUG) {
