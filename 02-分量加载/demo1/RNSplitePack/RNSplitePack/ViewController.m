@@ -6,7 +6,7 @@
 //  Copyright © 2019 wenjie. All rights reserved.
 //
 
-#define DEBUG 0
+#define DEBUG 1
 
 #import "ViewController.h"
 #import <React/RCTRootView.h>

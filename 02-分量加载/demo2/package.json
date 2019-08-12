@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "react-native start",
+    "buildcommon": "react-native bundle --platform ios --entry-file common.js --bundle-output ./dist/common.bundle --dev false",
+    "buildbusiness": "react-native bundle --platform ios --entry-file index.js --bundle-output ./dist/index.bundle --dev false",
+    "build1": "moles-packer --input ./ --entry index.js --output ./build --bundle --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,5 +15,6 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-native": "^0.60.4"
-  }
+  },
+  "devDependencies": {}
 }

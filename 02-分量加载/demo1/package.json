@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "yarn react-native start",
+    "start": "react-native start",
     "test": "node ./script/diff.js"
   },
   "keywords": [],
