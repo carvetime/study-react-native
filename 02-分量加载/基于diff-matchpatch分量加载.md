@@ -184,3 +184,5 @@ fs.writeFile(path.resolve(__dirname, '../dist/business.patch'),patch_text,functi
 
 ```
 这里我们可以看到common和business在打包的时候进行拆分，在客户端本地加载的时候有进行了合并，基础代码合业务代码有效的进行了拆分，不论有多少个业务模块common代码只有一份，不会造成多余的重复代码浪费存储和下载空间，同时diff方案目前也是很多热修复补丁使用的方案，但是此方法也是存在某些不足的，比如说在客户端进行合并及存储操作中也是存在I/O耗时操作的。
+
+[github代码](https://github.com/carvetime/study-react-native/tree/master/02-%E5%88%86%E9%87%8F%E5%8A%A0%E8%BD%BD/demo1)
